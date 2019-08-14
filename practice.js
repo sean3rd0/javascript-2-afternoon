@@ -15,8 +15,13 @@
 */
 
 //Code here 
-let me = {name : 'Sean', age : 24} 
-me.name
+let me = {
+  name: "Sean", 
+  age: 24
+};
+alert (me.name);
+// let me = {name : 'Sean', age : 24} 
+// me.name
 
 ////////// PROBLEM 2 //////////
 
@@ -33,18 +38,22 @@ var favoriteThings = {band : 'Nashville Tribute', food : "oatmeal", person : "Je
 */
 
 //Code here
-let favoriteBrand = "Ferrari" 
-let favoriteCar = "v10Formula1"
-favoriteThings.car = favoriteCar 
-favoriteThings.brand = favoriteBrand 
+favoriteThings['brand'] = 'McLaren';
+favoriteThings['car'] = 'F1';
+// let favoriteBrand = "Ferrari" 
+// let favoriteCar = "v10Formula1"
+// favoriteThings.car = favoriteCar 
+// favoriteThings.brand = favoriteBrand 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
 //Code here
-favoriteThings['food'] = 'Chicken Nuggets'
-favoriteThings.book = "Harry Potter"
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings['book'] = 'Harry Potter'
+// favoriteThings['food'] = 'Chicken Nuggets'
+// favoriteThings.book = "Harry Potter"
 
 
 ////////// PROBLEM 3 //////////
@@ -58,27 +67,36 @@ favoriteThings.book = "Harry Potter"
 */
 
 //Code here
-let backPack = {}
-let item = 'firstPocket';
+let backPack = {};
+let item = 'firstPocket'; 
 backPack[item] = 'chapstick';
-backPack.color = "Pink"
+backPack.color = 'greyish-blueish';
+
+
+// let backPack = {}
+// let item = 'firstPocket';
+// backPack[item] = 'chapstick';
+// backPack.color = "Pink"
 /*
   After you do the above, alert your entire backPack object.
 */
 
+
 //Code here
 alert (backPack)
+// alert (backPack)
 /*
 You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console.
 */
 
-//Code here
-console.log backpack
+//Code here 
+console.log (backPack)
+// console.log backpack //now that I'm looking at this my second time going through DevMountain, I see that clearly I didn't understand what console.log() meant or did, nor did I know how to console.log something (I didn't put parentheses after 'console.log');
 ////////// PROBLEM 4 //////////
 
-// Do not edit the code below.
+//Do not edit the code below.
 var user2 = {
   name: 'Bryan',
   age: 24,
@@ -87,7 +105,7 @@ var user2 = {
   birthday: '05/02/1990',
   username: 'bryansmith33'
 };
-// Do not edit the code above.
+//Do not edit the code above.
 
 /*
   Let's say I, the user, decided to change my name and email address to the following:
@@ -96,8 +114,10 @@ var user2 = {
 */
 
 //Code Here
-user2.name = 'Bryan G. Smith'
-user2.email = 'bryan.smith@devmounta.in'
+user2.name = 'Bryan G. Smith';
+user2['email'] = 'bryan.smith@devmounta.in';
+// user2.name = 'Bryan G. Smith'
+// user2.email = 'bryan.smith@devmounta.in'
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
 
@@ -108,14 +128,14 @@ user2.email = 'bryan.smith@devmounta.in'
 */
 
 //Code Here
-let methodCollection = {}
+// let methodCollection = {}
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
 */
 
 //Code Here
-methodCollection = {[function alertHello = alert ('hello')], [function logHello = log ('hello')]}
+// methodCollection = {[function alertHello = alert ('hello')], [function logHello = log ('hello')]}
 /*
   Now call your alertHello and logHello methods.
 */
